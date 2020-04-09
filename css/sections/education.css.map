@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW;EACP,gBAAgB,EAAE,KAAK",
+"sources": ["../../scss/sections/education.scss"],
+"names": [],
+"file": "education.css"
+}

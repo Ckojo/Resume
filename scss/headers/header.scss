@@ -1,0 +1,93 @@
+.header-basic-info {
+    padding: 10rem 0;
+    display: flex;
+    
+    .header-box {
+        background-color: $base-color;
+        width: 100%;
+        padding: 5rem 0rem 8rem 5rem;
+
+        @include responsive(phone-s) {
+            width: 60%;
+        }
+
+        span, p {
+            color: $white-color;
+            font-weight: bold;
+        }
+
+        span {
+            font-size: 2.7rem;
+
+            @include responsive(phone-s) {
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            text-transform: uppercase;
+            font-size: 3rem;
+
+            @include responsive(phone) {
+                font-size: 1.5rem;
+            }
+        }
+
+        .it-student-paragraph {
+            font-size: 2rem;
+            font-style: italic;
+            position: relative;
+            top: 5rem;
+
+            @include responsive(phone-s) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .header-contact-box {
+        background: #d3ba98;
+        width: 80%;
+        font-size: 1.9rem;
+        padding: 1.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+
+        &-group {
+            margin-bottom: 1rem;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        span {
+            font-weight: 500;
+        }
+
+        p {
+            display: inline;
+        }
+
+        a {
+            color: $black-color;
+            transition: color .4s;
+
+            &:hover {
+                color: $white-color;
+            }
+        }
+        
+        @include responsive(phone-s) {
+            width: 55%;
+            font-size: 1.2rem;
+        }
+
+        @include responsive(phone) {
+            width: 50%;
+            font-size: 1.4rem;
+        }
+    }
+}

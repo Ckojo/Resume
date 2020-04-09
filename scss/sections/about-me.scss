@@ -1,0 +1,48 @@
+.about-me {
+    transform: translateY(-5rem);
+    background-color: $sections-color;
+
+    &__main-header {
+        h1, h2 {
+            display: inline;
+        }
+
+        h1 {
+            color: $base-color;
+            font-size: 4rem;
+            padding-left: 1rem;
+
+            @include responsive(phone-s) {
+                font-size: 2rem;
+            }
+
+            @include responsive(phone) {
+                font-size: 2rem;
+            }
+        }
+
+        h2 {
+            @include responsive(phone-s) {
+                font-size: 2rem;
+            }
+
+            @include responsive(phone) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__text-info {
+        padding: 1rem;
+        p {
+            font-size: 1.8rem;
+            
+            @include responsive(phone-s) {
+                font-size: 1.5rem;
+            }
+            @include responsive(phone) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
