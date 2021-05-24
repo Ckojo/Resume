@@ -83,11 +83,16 @@
         @include responsive(phone-s) {
             width: 55%;
             font-size: 1.2rem;
+            padding-top: 0;
         }
 
         @include responsive(phone) {
             width: 50%;
             font-size: 1rem;
         }
+    }
+
+    @include responsive(phone) {
+        padding: 0 0 10rem 0;
     }
 }
